@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajani & Minerva Learning Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple learning hub website showing soundwave learning topics guided by Ajani and Minerva.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <nav aria-label="Main navigation">
+        <h1>Ajani & Minerva Learning Hub</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#modules">Learning Modules</a></li>
+            <li><a href="#quiz">Quick Quiz</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main id="main-content">
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About This Hub</h2>
+        <p>This site is a practice project for my web development course. Ajani and Minerva guide topics like architecture, energy, mythology, and soundwave learning.</p>
+
+        <div class="image-row">
+            <figure>
+                <img src="images/brainwave.png" alt="Illustration of sound and brainwaves.">
+                <figcaption>Soundwave learning with Ajani.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/learning.png" alt="Person studying with floating icons.">
+                <figcaption>Reflective learning with Minerva.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+
+    <!-- MODULES SECTION -->
+    <section id="modules">
+        <h2>Learning Modules</h2>
+        <p>Select a topic and click the button to get a suggested starting lesson.</p>
+
+        <label for="topic-select">Choose a topic:</label>
+        <select id="topic-select">
+            <option value="architecture">Soundwave Architecture</option>
+            <option value="energy">Rare Forms of Energy</option>
+            <option value="mythology">Global Mythology</option>
+            <option value="botany">Advanced Botany</option>
+        </select>
+
+        <button id="suggest-btn" type="button">Get Lesson</button>
+
+        <div id="lesson-output" class="card">
+            <h3>Lesson Suggestion</h3>
+            <p>Select a topic to get a lesson suggestion.</p>
+        </div>
+    </section>
+
+
+    <!-- QUIZ SECTION -->
+    <section id="quiz">
+        <h2>Quick Quiz</h2>
+
+        <form id="quiz-form">
+            <fieldset>
+                <legend>Which statement about soundwave learning is most accurate?</legend>
+
+                <label><input type="radio" name="sound" value="a"> It replaces all other study methods.</label><br>
+                <label><input type="radio" name="sound" value="b"> It supports focus when combined with other learning tools.</label><br>
+                <label><input type="radio" name="sound" value="c"> It works even if the learner isn't paying attention.</label>
+            </fieldset>
+
+            <button type="button" id="check-answer-btn">Check Answer</button>
+        </form>
+
+        <p id="quiz-feedback" aria-live="polite"></p>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact the Creator</h2>
+
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input id="name" type="text" required>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Submit (Demo Only)</button>
+        </form>
+
+        <p id="contact-feedback" aria-live="polite"></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Ajani & Minerva Learning Hub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
